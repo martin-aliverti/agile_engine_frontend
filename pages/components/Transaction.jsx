@@ -8,10 +8,7 @@ import TransactionSummary from "./TransactionSummary";
 
 export default ({ data }) => (
   <Accordion key={`transaction_${data.uuid}`}>
-    <AccordionSummary
-      expandIcon={<ExpandMoreIcon />}
-      aria-controls="panel1a-content"
-    >
+    <AccordionSummary expandIcon={<ExpandMoreIcon />}>
       <TransactionSummary data={data} />
     </AccordionSummary>
     <AccordionDetails>
